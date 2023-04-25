@@ -1,5 +1,21 @@
-
 ## LogicGate Logging Exercise
+
+### Instructions to run
+
+Make sure you have git and nodejs installed
+follow the installation instructions here https://git-scm.com/
+and here https://nodejs.org/en
+
+Run the commands `node -v` and `git --version`
+
+Navigate into the directory you put the project. Your working directory should be `/PATH/logs-code-solution`
+Run the command `node main.js`
+
+After running please view the new files in your directory `userAgents.json` which shows the most popular user agents
+`badRequests.json` which shows all the log records that were flagged as malicious
+`ipaddresses.json` which shows which ipaddresses were sending the most malicous requests
+
+After viewing those files please look at the file `Analysis.txt` for my brief overview of what patterns I noticed
 
 ### Overview
 
@@ -19,7 +35,7 @@ For this portion your script should correctly identify the malicious lines in th
 
 ### Implementation
 
-Your solution should be in the form of a script written in a language of your choosing. The script should be clear, concise, and written in such a way as to be easily modifiable and testable. We must be able to run your script, so include instructions on how to run it, and describe any external dependencies it needs. 
+Your solution should be in the form of a script written in a language of your choosing. The script should be clear, concise, and written in such a way as to be easily modifiable and testable. We must be able to run your script, so include instructions on how to run it, and describe any external dependencies it needs.
 
 ### Packaging
 
@@ -30,4 +46,3 @@ Your solution should be emailed to the person that sent it to you along with any
 user-agents
 
 https://github.com/N0taN3rd/userAgentLists
-

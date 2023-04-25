@@ -1,0 +1,21 @@
+{
+  "name": "logs-code-challenge",
+  "version": "1.0.0",
+  "description": "This repository represents a single day's live traffic to our demo environments. These are publicly facing servers that receive all sorts of traffic both legitimate and malicious. Your task is to efficiently parse these logs and answer the following questions:",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brucks24/logs-code-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brucks24/logs-code-challenge/issues"
+  },
+  "homepage": "https://github.com/brucks24/logs-code-challenge#readme"
+}

@@ -1,0 +1,24 @@
+Analysis for malicious requests
+
+
+For part two of the take home I originally tried to identify potentially malicous requests utilizing various different regex patterns. As I went along
+I noticed a pattern in the logs that were being flagged as potentially malicious and that was in the requested url it never contained logicgate in the domain.
+The normal request always had a logicgate domain or an aws domain with logicgate in contained within. The bad requests always had an ipaddress in the url or a random domain name instead. I will include some examples for both.
+
+Good request url: GET https://demo.logicgate.com:443/api/v1/internal/roles?name=Incident%20Logger
+
+Bad request url: GET http://52.89.231.63:80/robots.txt  and GET http://st-hu.com:80/ HTTP/1.1
+
+
+
+
+
+Another commonality with the bad requests was a non 2XX http status code, typically a 301 because the client was trying to access something they shouldnt be but there were a couple 400 and 503s as well.  
+The requests were also always using http instead of any of the other protocols such as HTTP/2 and HTTPS.
+Some of the requests also didnt have a user agent attached to the log there are a couple reasons this could happen but the most likely two are the client is a program that does not have a user agent string by default or
+the client is intentionally omitting the user agent to hide its identity or avoid detection. Last but not least it was a single IPaddress sending most of the bad requests, you can see this in the ipaddresses.json file that will
+appear in the current directory after running the script.
+
+
+
+
